@@ -14,10 +14,10 @@ func contact(c *gin.Context) {
 	var phone, _ = c.GetPostForm("phone")
 	var website, _ = c.GetPostForm("website")
 	// c.BindJSON(&data_contact)
-	// fmt.Print(name)
-	// fmt.Print(email)
-	// fmt.Print(phone)
-	// fmt.Print(website)
+	fmt.Print(name)
+	fmt.Print(email)
+	fmt.Print(phone)
+	fmt.Print(website)
 	c.JSON(http.StatusCreated, gin.H{"message": "Ok"})
 }
 
