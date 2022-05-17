@@ -34,8 +34,8 @@ func main() {
 		})
 	})
 
-	r.GET("/download_cv", downloadCV)
-	r.POST("/contact", contact)
+	r.GET("/api/download_cv", downloadCV)
+	r.POST("/api/contact", contact)
 
 	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
